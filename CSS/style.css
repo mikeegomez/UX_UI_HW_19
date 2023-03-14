@@ -1,0 +1,123 @@
+/* My UX Skills section coded using CSS flex */
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .flexContainer > div {
+    width: 33%;
+    height: 500px;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  /* My Work Section Constructed using CSS Grid */
+  .workGrid {
+    display: grid;
+    grid-template-areas:
+      "mywork mywork"
+      "mywork2 mywork2"
+      "mywork3 mywork3";
+    grid-template-rows: 200px repeat(2, 1fr) 100px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+.workGrid > div {
+  padding: 20px;
+  background-color: #f2f2f2;
+
+  display: flex; /* Make the div a flex container */
+  flex-direction: column; /* Align child elements vertically */
+  justify-content: center; /* Center child elements horizontally */
+  align-items: center; /* Center child elements vertically */
+  }
+
+.workGrid > div img {
+  max-width: 100%; /* Ensure the image fits within its parent div */
+  }
+  
+  /* Mobile Media Query */
+  @media only screen and (max-width: 600px) {
+    /* Flex container */
+    .flexContainer {
+      flex-direction: column;
+    }
+  
+    .flexContainer > div {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    /* Grid container */
+    .workGrid {
+      grid-template-areas:
+      "mywork mywork"
+      "mywork2 mywork2"
+      "mywork3 mywork3";
+      grid-template-rows: repeat(14, 1fr);
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  
+    .workGrid > div {
+      padding: 10px;
+    }
+  }
+
+/* extra code */
+
+button {
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.3s;
+}
+
+button:hover {
+  background-color: red;
+  color: white;
+}
+
+p {
+  font-family: Avenirnext, sans-serif;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  
+}
+
+h1 {
+    
+    font-family: Avenirnext, sans-serif;
+    text-transform: uppercase;
+    color: #757678;
+
+
+}
+
+h3 {
+  font-weight: 600px;
+  font-family: Avenirnext, sans-serif;
+  text-align: center;
+  cursor: pointer;
+
+
+}
+
+.view-all-projects:hover {
+  color: red;
+
+}
