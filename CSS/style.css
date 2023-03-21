@@ -1,3 +1,63 @@
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
+  font-family: Avenirnext, sans-serif;
+}
+
+.logo {
+  width: 23%;
+  padding: 1%;
+  text-align: left;
+}
+
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+nav ul {
+  width: 50%;
+  margin-left: auto;
+}
+
+/* NAVIGATION */
+.navigation {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  opacity: 0.6;
+  color: #000;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: Avenirnext, sans-serif;
+
+}
+
+
+/* HERO IMAGE */
+
+.heroImg {
+  height: 600px;
+  padding: 25px;
+}
+
+.content {
+  width: 500px;
+  margin: 0 auto;
+  font-family: Avenirnext, sans-serif;
+ 
+}
+
+
+
+
+
+
 /* My UX Skills section coded using CSS flex */
 .flexContainer {
     display: flex;
@@ -70,6 +130,25 @@
       padding: 10px;
     }
   }
+
+/* FOOTER */
+
+.footer {
+  background-color: #373738;
+  padding: 50px;
+  
+  
+}
+
+.ul {
+  width: 50%;
+  margin-left: auto;
+}
+
+.li {
+  padding: center;
+}
+
 
 /* extra code */
 
@@ -147,4 +226,51 @@ h3 {
 
 .imagecontainer:hover img {
   transform: scale(1.5);
+}
+
+
+/* Navbar */
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
+}
+.logo {
+  width: 23%;
+  padding: 1%;
+}
+nav {
+  width: 73%;
+  padding: 1%;
+}
+ul {
+  width: 50%;
+  margin-left: auto;
+}
+
+/* Hero Image */
+.heroImg {
+  height: 600px;
+  padding: 25px;
+}
+.content {
+  width: 500px;
+  margin: 0 auto;
+}
+
+/* Footer */
+footer {
+  background-color: #373738;
+  padding: 10px;
+}
+ul {
+  display: inline-block;
+  vertical-align: top;
+}
+li {
+  padding: 0 10px;
+  text-align: center;
+}
+
+body {
+  direction: ltr;
 }
