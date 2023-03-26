@@ -54,7 +54,9 @@ nav ul {
  
 }
 
-
+.content img{
+  max-width: 300px;
+}
 
 
 .flexContainer {
